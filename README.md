@@ -40,6 +40,13 @@ not necessary if using html output, see https://github.com/tvdstaaij/telegram-hi
 2. Install lib ```pip install unicodecsv```
 3. Run the script ```python telegram-history-json-to-csv.py myBackupFolder/json/Name_Surname.jsonl Name_Surname.csv```
 
+To run the script on ALL jsonl files:
+```
+for f in outputFolder/json/*.jsonl; do
+  python telegram-history-json-to-csv.py  "$f" "${f%.jsonl}.csv"
+done
+```
+
 
 # TODO
 * check if new backups are incremental
