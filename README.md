@@ -1,5 +1,4 @@
-# telegramBackup
-How to backup your chats in telegram.
+# telegramBackup: How to backup your chats in Telegram
 Thanks to https://www.haykranen.nl/2014/12/02/howto-backup-your-telegram-chats/
 
 # Install telegram-cli
