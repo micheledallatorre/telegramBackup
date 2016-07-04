@@ -30,7 +30,7 @@ see https://github.com/tvdstaaij/telegram-history-dump#performing-a-backup
 1. Start telegram-cli
 ```./bin/telegram-cli --json -P 9009```
 2. Insert your phone number the first time you start telegram-cli, e.g. +393401234567
-3. Check ```config.yaml``` see https://github.com/tvdstaaij/telegram-history-dump#first-time-setup
+3. Check ```config.yaml``` e.g. by setting maximum number of conversations to backup (default 100 cfr. https://github.com/tvdstaaij/telegram-history-dump/blob/master/config.yaml#L34) or output folder, etc. See https://github.com/tvdstaaij/telegram-history-dump#first-time-setup
 4. Run backup ```ruby telegram-history-dump.rb```
 
 # Transform from json to csv (optional)
@@ -48,5 +48,5 @@ done
 ```
 
 
-# TODO
-* check if new backups are incremental
+# Notes
+* new backups are incremental
